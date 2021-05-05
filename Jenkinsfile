@@ -7,9 +7,9 @@ pipeline{
       }
     }
   }
-  //post {
-    //    always {
-      //      archiveArtifacts artifacts: '/var/lib/jenkins/workspace/javaApp', onlyIfSuccessful: true
-        //}
-    //}
+  post {
+       always {
+           archiveArtifacts artifacts: '*.jar', onlyIfSuccessful: true
+        }
+    }
 }
