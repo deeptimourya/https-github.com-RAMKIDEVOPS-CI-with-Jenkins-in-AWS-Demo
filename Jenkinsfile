@@ -9,7 +9,7 @@ pipeline{
   }
   post {
         always {
-            archiveArtifacts artifacts: '/project/src/build.jar', onlyIfSuccessful: true
+            archiveArtifacts artifacts: '/var/lib/jenkins/workspace/javaApp', onlyIfSuccessful: true
         }
     }
 }
